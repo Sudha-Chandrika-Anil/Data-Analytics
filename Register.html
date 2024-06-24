@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Euphoria Fest Registration</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Register for Euphoria Fest</h1>
+    <!-- Replace action attribute with your Google Apps Script web app URL -->
+    <form id="registrationForm" action="https://script.google.com/macros/s/AKfycbwRkC4kgduz9IxECeFUT1SPX1vUbEiIZmAUVa4XvNi8f3qQFDgZ9HPUITWgGznYnjs7/exec" method="POST">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="ticketType">Type:</label>
+        <select id="ticketType" name="ticketType" required>
+          <option value="">Select Fest Type</option>
+          <option value="general">Gaming</option>
+          <option value="vip">Management Fest</option>
+          <option value="backstage">Teasure Hunt</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="additionalInfo">Additional Information:</label>
+        <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Register</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
